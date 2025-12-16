@@ -1,0 +1,78 @@
+.skeleton-page {
+  background: #111;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.skeleton-banner {
+  height: 300px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #222 25%, #333 37%, #222 63%);
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-header {
+  display: flex;
+  gap: 16px;
+  margin-top: -100px;
+  align-items: flex-end;
+}
+
+.skeleton-poster {
+  width: 250px;
+  height: 360px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #222 25%, #333 37%, #222 63%);
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-text {
+  flex: 1;
+}
+
+.line {
+  height: 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #222 25%, #333 37%, #222 63%);
+  animation: shimmer 1.5s infinite;
+}
+
+.line.title {
+  height: 28px;
+  width: 60%;
+}
+
+.line.short {
+  width: 40%;
+}
+
+.skeleton-cast-title {
+  width: 120px;
+  height: 24px;
+  margin: 40px 0 20px;
+  background: linear-gradient(90deg, #222 25%, #333 37%, #222 63%);
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-cast {
+  display: flex;
+  gap: 12px;
+}
+
+.skeleton-cast-card {
+  width: 120px;
+  height: 180px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #222 25%, #333 37%, #222 63%);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}

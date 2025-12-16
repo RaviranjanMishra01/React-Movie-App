@@ -1,0 +1,48 @@
+.box {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: 1s;
+    background-color:#161414bd ;
+    cursor: pointer;
+    border: 3.2px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(90deg,
+            #bf1616,
+            #f2f1ef,
+            #ffd013) 1;
+
+    .images {
+        width: 100%;
+
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            transition: 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+}
+
+.aboutmovie {
+    padding: 10px 12px;
+
+    p {
+        font-size: 1.1rem;
+    }
+    
+}
+.aboutmovie:hover{
+        color: #D56B3D;
+    }
+
