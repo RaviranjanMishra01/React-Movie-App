@@ -1,42 +1,292 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 20px 10vw;
+  background-color: #000000;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.Top_inputbox {
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  h3 {
+    font-size: 3rem;
+    color: aliceblue;
+  }
+}
+
+.inputboxs {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+    input {
+      padding: 10px 25px;
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border: none;
+      outline: none;
+      background-color: rgb(28, 28, 61);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    button {
+      font-size: 1.2rem;
+      padding: 10px 25px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border: none;
+      outline: none;
+      background-color: #CBFC01;
+      font-weight: 700;
+      cursor: pointer;
+      background: linear-gradient(90deg,
+          #CA4847,
+          #F4C922,
+          #F4C922);
+    }
+}
+
+.leatesmovies {
+  margin-top: 30px;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px;
+  background-color: #222222;
+  border-radius: 8px;
+
+  h3 {
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+.fireimage {
+  height: 35px;
+}
+
+.searchresult {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  gap: 15px;
+}
+
+.popup {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+
+  .box2 {
+    cursor: pointer;
+    height: 450px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 3.2px solid;
+    border-radius: 10px;
+    border-image: linear-gradient(90deg, #bf1616, #f2f1ef, #ffd013) 1;
+
+    .boxmovieimg {
+      height: 80%;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+  }
+}
+
+.searchmoviedetail {
   text-align: center;
+  font-size: 1.2rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.countinglist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  .btnmove{
+    height: 30px;
+    cursor: pointer;
+    img{
+      height: 100%;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  span{
+    display: inline-block;
+    padding: 10px 12px;
+    font-size: 1.2rem;
   }
 }
 
-.card {
-  padding: 2em;
+.footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
 }
 
-.read-the-docs {
-  color: #888;
+.footer p {
+  margin: 4px 0;
+}
+
+.footer {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    li {
+      cursor: pointer;
+      height: 25px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.footer small {
+  color: #666;
+}
+
+
+@media (max-width:1285px) {
+  .searchresult {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:600px) {
+  .main {
+    padding: 15px 5vw;
+  }
+
+  .Top_inputbox {
+    a {
+      h3 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  .inputboxs {
+    width: 50%;
+    display: flex;
+
+    input {
+      padding: 5px 15px;
+      width: 100%;
+    }
+
+    button {
+      font-size: 1.2rem;
+      padding: 5px 15px;
+    }
+  }
+
+  .searchresult {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:546px) {
+  .Top_inputbox {
+    font-size: 1rem;
+
+    a {
+      h3 {
+        font-size: 2rem;
+      }
+    }
+
+    .inputboxs {
+      input {
+        padding: 5px;
+      }
+
+      button {
+        padding: 5px;
+      }
+    }
+  }
+
+  .leatesmovies {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .searchresult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    height: 450px;
+    width: 70% !important;
+  }
+}
+
+@media (max-width:400px) {
+  .Top_inputbox {
+    a {
+      h3 {
+        font-size: 7vw;
+      }
+    }
+  }
+
+  .inputboxs {
+    input {
+      font-size: 0.78rem;
+    }
+
+    button {
+      font-size: 0.78rem;
+    }
+  }
+
+  .box {
+    width: 80% !important;
+  }
 }
