@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Selectmovie.css";
-import errimg from "../images/err.png"
+import errimg from "../images/err.png";
 import MovieDetailsSkeleton from "./MovieDetailsSkeleton";
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
@@ -32,12 +32,14 @@ function Selectmovie() {
           `${BASE_URL}/movie/${id}?api_key=${API_KEY}`
         );
         const movieData = await movieRes.json();
+        console.log("movie details", movieData);
         setMovie(movieData);
 
         const castRes = await fetch(
           `${BASE_URL}/movie/${id}/credits?api_key=${API_KEY}`
         );
         const castData = await castRes.json();
+        console.log("cast details : ", castData);
         setCast(castData.cast || []);
       } catch (error) {
         console.error(error);
@@ -49,9 +51,7 @@ function Selectmovie() {
 
   // Loader (first 5 seconds)
   if (!movie && !showFallback) {
-    return (
-      < MovieDetailsSkeleton />
-    );
+    return <MovieDetailsSkeleton />;
   }
 
   //  Fallback after 5 seconds
@@ -102,10 +102,66 @@ function Selectmovie() {
         </div>
 
         <h1 className="movietitle">{movie.title}</h1>
-        <p className="overview">Movie-overview : {movie.overview}</p>
+        <div className="moviefulldetail">
+          <h2>Movie Detail : </h2>
+          <p>
+            Genres:{" "}
+            <span>
+              {movie.genres?.length
+                ? movie.genres.map((g) => g.name).join(", ")
+                : "N/A"}
+            </span>
+          </p>
+
+          <p>
+            Release Date : <span>{movie.release_date}</span>
+          </p>
+          <p>
+            IMDB Rating :{" "}
+            {movie.vote_average
+              ? Math.floor(movie.vote_average) + "/10"
+              : "Not available"}
+          </p>
+
+          <p>
+            Runtime:{" "}
+            <span>
+              {movie.runtime
+                ? `${Math.floor(movie.runtime / 60)}h ${movie.runtime % 60}m`
+                : "N/A"}
+            </span>
+          </p>
+          <p>
+            Budget:{" "}
+            <span>
+              {movie.budget
+                ? `$${movie.budget.toLocaleString()}`
+                : "Not available"}
+            </span>
+          </p>
+
+          <p>
+            Original Language: <span>{movie.original_language}</span>
+          </p>
+          <p>
+            Spoken Languages:{" "}
+            <span>
+              {movie.spoken_languages?.length
+                ? movie.spoken_languages
+                    .map((lang) => lang.english_name)
+                    .join(", ")
+                : "N/A"}
+            </span>
+          </p>
+
+          <div className="overview">
+            <h2>Storyline :</h2>
+            <p className="overviewdetail"> {movie.overview}</p>
+          </div>
+        </div>
 
         {/* Cast Section */}
-        <h2 className="Casts">Cast</h2>
+        <h2 className="Casts">Casts/Actors</h2>
         <div className="allacters">
           {cast.slice(0, 6).map((actor) => (
             <div key={actor.id} style={{ width: "120px" }}>
