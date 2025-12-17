@@ -1,16 +1,70 @@
-# React + Vite
+# Movies4u - React TMDB Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Movies4u is a modern React-based web application that allows users to explore the latest movies, search for movies, and view detailed information including cast, runtime, genres, language, budget, and IMDb rating. It leverages **The Movie Database (TMDB) API** for fetching movie data.  
 
-Currently, two official plugins are available:
+---
+## Live link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## priview 👀
+![](./public/ScreenRecording2025-12-17164623-ezgif.com-video-to-gif-converter.gif)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+![](./public/ScreenRecording2025-12-17170114-ezgif.com-video-to-gif-converter.gif)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 📂 Project Structure
+```js
+React-Movie-App/
+├─ public/
+├─ src/
+│ ├─ assets/
+│ │ ├─ Components/
+│ │ │ ├─ Moviesboxs.jsx
+│ │ │ ├─ MoviesboxsSkeleton.jsx
+│ │ │ └─ MovieDetailsSkeleton.jsx
+│ │ └─ images/
+│ │ ├─ Allimage.js
+│ │ ├─ err.png
+│ │ └─ other icons
+│ ├─ App.jsx
+│ ├─ App.css
+│ ├─ index.css
+│ └─ main.jsx
+├─ .env
+├─ package.json
+└─ README.md
+```
+yaml
+Copy code
+
+---
+
+## ⚡ Features
+
+- Display latest movies using TMDB API.
+- Search movies by name with URL-driven search.
+- Movie details page including:
+  - Title, poster, backdrop
+  - Runtime, budget, genres, release date
+  - Cast with profile images
+  - IMDb rating
+- Responsive layout and lazy-loaded images for better performance.
+- Simple pagination for browsing latest movies.
+- Error handling for unavailable movies or API errors.
+
+---
+
+## 🛠 Technology Stack
+
+- **Frontend:** React 18, React Router DOM v6, Functional Components, Hooks
+- **API:** The Movie Database (TMDB) API
+- **Styling:** CSS Modules / standard CSS
+- **Deployment:** Vite + React
+
+---
+
+
+## 👨‍💻 Author
+
+** ❤️ Raviranjan kumar ❤️ **
