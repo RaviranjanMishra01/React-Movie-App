@@ -4,129 +4,20 @@ function MoviesboxsSkeleton() {
   return (
     <div className="container">
         <div className="box skeleton">
-      <div className="images skeleton-img"></div>
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
 
       <div className="aboutmovie">
         <div className="skeleton-line title"></div>
         <div className="skeleton-line"></div>
         <div className="skeleton-line short"></div>
       </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div> 
-
+    </div>
     <div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
+      <div className="images skeleton-img">
+        <img src="" alt="" />
       </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
-
-      <div className="aboutmovie">
-        <div className="skeleton-line title"></div>
-        <div className="skeleton-line"></div>
-        <div className="skeleton-line short"></div>
-      </div>
-    </div><div className="box skeleton">
-      <div className="images skeleton-img"></div>
 
       <div className="aboutmovie">
         <div className="skeleton-line title"></div>
@@ -134,7 +25,118 @@ function MoviesboxsSkeleton() {
         <div className="skeleton-line short"></div>
       </div>
     </div>
+    <div className="box skeleton">
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
+
+      <div className="aboutmovie">
+        <div className="skeleton-line title"></div>
+        <div className="skeleton-line"></div>
+        <div className="skeleton-line short"></div>
+      </div>
     </div>
+    <div className="box skeleton">
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
+
+      <div className="aboutmovie">
+        <div className="skeleton-line title"></div>
+        <div className="skeleton-line"></div>
+        <div className="skeleton-line short"></div>
+      </div>
+    </div>
+    <div className="box skeleton">
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
+
+      <div className="aboutmovie">
+        <div className="skeleton-line title"></div>
+        <div className="skeleton-line"></div>
+        <div className="skeleton-line short"></div>
+      </div>
+    </div>
+    <div className="box skeleton">
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
+
+      <div className="aboutmovie">
+        <div className="skeleton-line title"></div>
+        <div className="skeleton-line"></div>
+        <div className="skeleton-line short"></div>
+      </div>
+    </div>
+    <div className="box skeleton">
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
+
+      <div className="aboutmovie">
+        <div className="skeleton-line title"></div>
+        <div className="skeleton-line"></div>
+        <div className="skeleton-line short"></div>
+      </div>
+    </div>
+    <div className="box skeleton">
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
+
+      <div className="aboutmovie">
+        <div className="skeleton-line title"></div>
+        <div className="skeleton-line"></div>
+        <div className="skeleton-line short"></div>
+      </div>
+    </div>
+    <div className="box skeleton">
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
+
+      <div className="aboutmovie">
+        <div className="skeleton-line title"></div>
+        <div className="skeleton-line"></div>
+        <div className="skeleton-line short"></div>
+      </div>
+    </div>
+    <div className="box skeleton">
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
+
+      <div className="aboutmovie">
+        <div className="skeleton-line title"></div>
+        <div className="skeleton-line"></div>
+        <div className="skeleton-line short"></div>
+      </div>
+    </div>
+    <div className="box skeleton">
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
+
+      <div className="aboutmovie">
+        <div className="skeleton-line title"></div>
+        <div className="skeleton-line"></div>
+        <div className="skeleton-line short"></div>
+      </div>
+    </div>
+    <div className="box skeleton">
+      <div className="images skeleton-img">
+        <img src="" alt="" />
+      </div>
+
+      <div className="aboutmovie">
+        <div className="skeleton-line title"></div>
+        <div className="skeleton-line"></div>
+        <div className="skeleton-line short"></div>
+      </div>
+    </div>
+  </div>
+  
   );
 }
 

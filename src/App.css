@@ -86,21 +86,22 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 25px;
-  gap: 15px;
+  gap: 10px;
 }
 
 .popup {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   justify-content: space-around;
 
   .box2 {
     cursor: pointer;
     height: 450px;
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     gap: 10px;

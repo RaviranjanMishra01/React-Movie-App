@@ -38,7 +38,9 @@ function App() {
       } catch {
         setError("Failed to fetch latest movies");
       } finally {
-        setLoading(false);
+        setTimeout(() => {
+          setLoading(false);
+        },2000);
       }
     };
 
@@ -74,7 +76,9 @@ function App() {
       } catch {
         setError("Search failed. Check internet connection");
       } finally {
-        setLoading(false);
+        setTimeout(() => {
+          setLoading(false);
+        }, 2000);
       }
     };
 
@@ -128,7 +132,7 @@ function App() {
       {/* HEADER */}
       <div className="Top_inputbox">
         <Link to="/">
-          <h3>Movies 4u</h3>
+          <h3 onClick={()=>{setchangeindex(1)}}>Movies 4u</h3>
         </Link>
 
         <form className="inputboxs" onSubmit={handleSearch}>
@@ -154,7 +158,7 @@ function App() {
       {/* ERROR */}
       {error && (
         <div
-          style={{ textAlign: "center", fontSize: "2rem", marginTop: "5vh" }}
+          style={{ textAlign: "center", fontSize: "2rem", marginTop: "15vh", height:"25vh" }}
         >
           {error}
         </div>
